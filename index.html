@@ -48,12 +48,13 @@ section h2{
 }
 
 .item{margin-bottom:20px;}
-.item h3{font-size:18px;}
+.item h3{font-size:18px;margin-bottom:4px;}
 .item span{font-size:14px;color:#666;}
 
 .skills span{
     display:inline-block;background:#00bcd4;color:#fff;
     padding:8px 14px;margin:6px 6px 0 0;border-radius:20px;
+    font-size:14px;
 }
 
 section a{color:#00bcd4;text-decoration:none;font-weight:500;}
@@ -67,6 +68,8 @@ footer{
 @media(max-width:768px){
     aside{position:relative;width:100%;height:auto;}
     main{margin-left:0;}
+    nav ul{display:flex;justify-content:center;flex-wrap:wrap;}
+    nav ul li{margin:10px;}
 }
 </style>
 </head>
@@ -80,7 +83,7 @@ footer{
 <h1>Nasir Noor Muhammad</h1>
 <p>Educator | IT Manager | Web Developer</p>
 
-<nav>
+<nav aria-label="Main Navigation">
 <ul>
 <li><a href="#objective"><i class="fa-solid fa-bullseye"></i> Objective</a></li>
 <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
@@ -118,16 +121,45 @@ footer{
 
 <section id="experience">
 <h2><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
-<div class="item"><h3>IT Manager</h3><span>Punjab College (2013–Present)</span></div>
-<div class="item"><h3>Admin Manager</h3><span>Noor Muhammad Furniture (2005–2013)</span></div>
+<div class="item"><h3>IT Manager</h3><span>Punjab College of Technology & Management Science (2013–Present)</span></div>
+<div class="item"><h3>Admin Manager</h3><span>Noor Muhammad Furniture Mart (2005–2013)</span></div>
+<div class="item"><h3>LDC</h3><span>Pakistan Railways Police (2002–2005)</span></div>
+<div class="item"><h3>Booking Officer</h3><span>Taq Cargo Lahore (1995–2002)</span></div>
+
+<h2 style="margin-top:30px;"><i class="fa-solid fa-chalkboard-teacher"></i> Teaching Experience</h2>
+<div class="item"><h3>Lecturer</h3><span>Computer Fundamentals – GCUF / AICOT</span></div>
+<div class="item"><h3>Lecturer</h3><span>C++, Networking – Superior Technology Campus</span></div>
+<div class="item"><h3>Instructor</h3><span>MS Office, AutoCAD, Primavera – Punjab Polytechnic Institute</span></div>
 </section>
 
 <section id="skills">
-<h2><i class="fa-solid fa-code"></i> Skills</h2>
+<h2><i class="fa-solid fa-code"></i> Skills & Certifications</h2>
 <div class="skills">
-<span>HTML</span><span>CSS</span><span>Python</span>
-<span>SQL</span><span>Networking</span><span>AutoCAD</span>
+<span>HTML</span><span>CSS</span><span>Python</span><span>SQL</span>
+<span>Flask</span><span>Networking</span><span>MS Office</span>
+<span>AutoCAD</span><span>Primavera-6</span>
+<span>Hardware Engineering</span><span>English Language</span>
 </div>
+</section>
+
+<section id="personal">
+<h2><i class="fa-solid fa-user"></i> Personal Details</h2>
+<p><strong>Father’s Name:</strong> Noor Muhammad</p>
+<p><strong>Date of Birth:</strong> 10-07-1972</p>
+<p><strong>Nationality:</strong> Pakistani</p>
+<p><strong>Marital Status:</strong> Married</p>
+<p><strong>Religion:</strong> Islam</p>
+</section>
+
+<section id="contact">
+<h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+<p><i class="fa-solid fa-envelope"></i> 
+<a href="mailto:nasirnoormuhammad@gmail.com">nasirnoormuhammad@gmail.com</a></p>
+<p><i class="fa-solid fa-phone"></i> 
+<a href="tel:+923364387365">+92 336 4387365</a></p>
+<p><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</p>
+<p><i class="fab fa-linkedin"></i> 
+<a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></p>
 </section>
 
 <!-- TEACHING PORTAL -->
@@ -146,31 +178,4 @@ footer{
 <h3>📐 Mathematics (BISE Lahore)</h3>
 <a href="subjects/mathematics/class9.html">Class 9</a> |
 <a href="subjects/mathematics/class10.html">Class 10</a> |
-<a href="subjects/mathematics/class11.html">Class 11</a> |
-<a href="subjects/mathematics/class12.html">Class 12</a>
-</div>
-
-<div class="item">
-<h3>⚛ Physics (BISE Lahore)</h3>
-<a href="subjects/physics/class9.html">Class 9</a> |
-<a href="subjects/physics/class10.html">Class 10</a> |
-<a href="subjects/physics/class11.html">Class 11</a> |
-<a href="subjects/physics/class12.html">Class 12</a>
-</div>
-
-<div class="item">
-<h3>🤖 Artificial Intelligence (Leads University)</h3>
-<a href="subjects/ai/leads.html">Course Material</a>
-</div>
-
-<div class="item">
-<h3>💻 Software Engineering (Leads University)</h3>
-<a href="subjects/software-engineering/leads.html">Course Material</a>
-</div>
-</section>
-
-<footer>© 2026 Nasir Noor Muhammad</footer>
-</main>
-</div>
-</body>
-</html>
+<a href="subjects/mathematics/class11.html">Class 11</a>
