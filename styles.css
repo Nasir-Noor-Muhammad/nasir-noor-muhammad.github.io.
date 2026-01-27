@@ -1,0 +1,221 @@
+/* ===== Global Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background: #f2f4f7;
+  color: #333;
+  line-height: 1.7;
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Sidebar ===== */
+aside {
+  width: 280px;
+  background: #111;
+  color: #fff;
+  padding: 40px 25px;
+  position: fixed;
+  height: 100vh;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+aside:hover {
+  background: #222;
+}
+aside img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  border: 3px solid #00bcd4;
+  margin-bottom: 20px;
+}
+aside h1 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+aside p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  margin: 14px 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+/* ===== Main Content ===== */
+main {
+  margin-left: 280px;
+  padding: 50px;
+  width: 100%;
+}
+section {
+  background: #fff;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.1);
+  margin-bottom: 40px;
+}
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+.item {
+  margin-bottom: 20px;
+}
+.item h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.item span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== Skills ===== */
+.skills span {
+  display: inline-block;
+  background: #00bcd4;
+  color: #fff;
+  padding: 8px 14px;
+  margin: 6px 6px 0 0;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* ===== Links ===== */
+section a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 500;
+}
+section a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 18px;
+  border-top: 2px solid #00bcd4;
+  font-size: 14px;
+}
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Teaching Portal ===== */
+#teaching {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.columns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 1 1 100%;
+}
+@media(min-width:992px){
+  .column {
+    flex: 1;
+  }
+}
+.item.box {
+  background: #fff;
+  margin: 12px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+.item.box:hover {
+  transform: translateY(-3px);
+}
+.box-header {
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.item.box a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+.item.box a:hover {
+  background: #0077cc;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* ===== Subject Colors ===== */
+.biology .box-header { background: #4CAF50; }     /* Green */
+.chemistry .box-header { background: #FF5722; }   /* Orange */
+.physics .box-header { background: #2196F3; }     /* Blue */
+.mathematics .box-header { background: #9C27B0; } /* Purple */
+.computer .box-header { background: #009688; }    /* Teal */
+.english .box-header { background: #3F51B5; }     /* Indigo */
+.urdu .box-header { background: #795548; }        /* Brown */
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+  aside {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  main {
+    margin-left: 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin: 10px;
+  }
+}

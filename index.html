@@ -11,67 +11,7 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
-body{background:#f2f4f7;color:#333;line-height:1.7;}
-.wrapper{display:flex;min-height:100vh;}
-
-aside{
-    width:280px;background:#111;color:#fff;padding:40px 25px;
-    position:fixed;height:100vh;text-align:center;
-}
-aside img{
-    width:120px;height:120px;border-radius:50%;
-    border:3px solid #00bcd4;margin-bottom:20px;
-}
-aside h1{font-size:22px;margin-bottom:6px;}
-aside p{font-size:14px;color:#aaa;margin-bottom:30px;}
-
-nav ul{list-style:none;}
-nav ul li{margin:14px 0;}
-nav ul li a{
-    color:#fff;text-decoration:none;font-size:16px;
-    display:flex;align-items:center;gap:12px;transition:.3s;
-}
-nav ul li a:hover{color:#00bcd4;}
-
-main{margin-left:280px;padding:50px;width:100%;}
-section{
-    background:#fff;padding:28px;border-radius:10px;
-    box-shadow:0 6px 14px rgba(0,0,0,.1);
-    margin-bottom:40px;
-}
-section h2{
-    font-size:24px;margin-bottom:20px;
-    border-bottom:2px solid #00bcd4;
-    display:inline-flex;gap:10px;align-items:center;
-}
-
-.item{margin-bottom:20px;}
-.item h3{font-size:18px;margin-bottom:4px;}
-.item span{font-size:14px;color:#666;}
-
-.skills span{
-    display:inline-block;background:#00bcd4;color:#fff;
-    padding:8px 14px;margin:6px 6px 0 0;border-radius:20px;
-    font-size:14px;
-}
-
-section a{color:#00bcd4;text-decoration:none;font-weight:500;}
-section a:hover{text-decoration:underline;}
-
-footer{
-    background:#111;color:#aaa;text-align:center;
-    padding:18px;border-top:2px solid #00bcd4;
-}
-
-@media(max-width:768px){
-    aside{position:relative;width:100%;height:auto;}
-    main{margin-left:0;}
-    nav ul{display:flex;justify-content:center;flex-wrap:wrap;}
-    nav ul li{margin:10px;}
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -79,7 +19,7 @@ footer{
 
 <!-- SIDEBAR -->
 <aside>
-<img src="images/nnm.jpg" alt="Nasir Noor Muhammad">
+<img src="images/nnm.jpg" alt="Portrait of Nasir Noor Muhammad">
 <h1>Nasir Noor Muhammad</h1>
 <p>Educator | IT Manager | Web Developer</p>
 
@@ -143,13 +83,16 @@ footer{
 </section>
 
 <section id="personal">
-<h2><i class="fa-solid fa-user"></i> Personal Details</h2>
-<p><strong>Father’s Name:</strong> Noor Muhammad</p>
-<p><strong>Date of Birth:</strong> 10-07-1972</p>
-<p><strong>Nationality:</strong> Pakistani</p>
-<p><strong>Marital Status:</strong> Married</p>
-<p><strong>Religion:</strong> Islam</p>
+  <h2><i class="fa-solid fa-user"></i> Personal Details</h2>
+  <ul>
+    <li><strong>Father’s Name:</strong> Noor Muhammad</li>
+    <li><strong>Date of Birth:</strong> 10 July 1972</li>
+    <li><strong>Nationality:</strong> Pakistani</li>
+    <li><strong>Marital Status:</strong> Married</li>
+    <li><strong>Religion:</strong> Islam</li>
+  </ul>
 </section>
+
 
 <section id="contact">
 <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
@@ -159,70 +102,80 @@ footer{
 <a href="tel:+923364387365">+92 336 4387365</a></p>
 <p><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</p>
 <p><i class="fab fa-linkedin"></i> 
-<a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></p>
+<a href="https://linkedin.com/in/nasirnoormuhammad" target="_blank">LinkedIn Profile</a></p>
 </section>
 
 <!-- TEACHING PORTAL -->
 <section id="teaching">
-<h2><i class="fa-solid fa-book"></i> Teaching Portal</h2>
-<div class="column">
-    <h3>🔬 Science Subjects (BISE Lahore)</h3>
+  <h2><i class="fa-solid fa-book"></i> Teaching Portal</h2>
+  
+  <div class="columns">
+    <!-- Science Subjects -->
+    <div class="column">
+      <h3>🔬 Science Subjects (O Level | BISE Lahore)</h3>
 
-    <div class="item">
-      <h3>📘 Biology</h3>
-      <a href="subjects/biology/class9.html">Class 9</a> |
-      <a href="subjects/biology/class10.html">Class 10</a> |
-      <a href="subjects/biology/class11.html">Class 11</a> |
-      <a href="subjects/biology/class12.html">Class 12</a>
+      <div class="item box biology">
+        <div class="box-header">📘 Biology</div>
+               <a href="subjects/biology/class9.html">Class 9</a> |
+        <a href="subjects/biology/class10.html">Class 10</a> |
+        <a href="subjects/biology/class11.html">Class 11</a> |
+        <a href="subjects/biology/class12.html">Class 12</a>
+      </div>
+
+      <div class="item box chemistry">
+        <div class="box-header">⚗️ Chemistry</div>
+        <a href="subjects/chemistry/class9.html">Class 9</a> |
+        <a href="subjects/chemistry/class10.html">Class 10</a> |
+        <a href="subjects/chemistry/class11.html">Class 11</a> |
+        <a href="subjects/chemistry/class12.html">Class 12</a>
+      </div>
+
+      <div class="item box physics">
+        <div class="box-header">🔭 Physics</div>
+        <a href="subjects/physics/class9.html">Class 9</a> |
+        <a href="subjects/physics/class10.html">Class 10</a> |
+        <a href="subjects/physics/class11.html">Class 11</a> |
+        <a href="subjects/physics/class12.html">Class 12</a>
+      </div>
+
+      <div class="item box mathematics">
+        <div class="box-header">📐 Mathematics</div>
+        <a href="subjects/mathematics/class9.html">Class 9</a> |
+        <a href="subjects/mathematics/class10.html">Class 10</a> |
+        <a href="subjects/mathematics/class11.html">Class 11</a> |
+        <a href="subjects/mathematics/class12.html">Class 12</a>
+      </div>
+
+      <div class="item box computer">
+        <div class="box-header">💻 Computer Science</div>
+        <a href="subjects/computer/class9.html">Class 9</a> |
+        <a href="subjects/computer/class10.html">Class 10</a> |
+        <a href="subjects/computer/class11.html">Class 11</a> |
+        <a href="subjects/computer/class12.html">Class 12</a>
+      </div>
     </div>
 
-    <div class="item">
-      <h3>⚗️ Chemistry</h3>
-      <a href="subjects/chemistry/class9.html">Class 9</a> |
-      <a href="subjects/chemistry/class10.html">Class 10</a> |
-      <a href="subjects/chemistry/class11.html">Class 11</a> |
-      <a href="subjects/chemistry/class12.html">Class 12</a>
-    </div>
+    <!-- Other Subjects -->
+    <div class="column">
+      <h3>📚 Other Subjects (O Level | BISE Lahore)</h3>
 
-    <div class="item">
-      <h3>🔭 Physics</h3>
-      <a href="subjects/physics/class9.html">Class 9</a> |
-      <a href="subjects/physics/class10.html">Class 10</a> |
-      <a href="subjects/physics/class11.html">Class 11</a> |
-      <a href="subjects/physics/class12.html">Class 12</a>
-    </div>
+      <div class="item box english">
+        <div class="box-header">📖 English</div>
+        <a href="subjects/english/class9.html">Class 9</a> |
+        <a href="subjects/english/class10.html">Class 10</a> |
+        <a href="subjects/english/class11.html">Class 11</a> |
+        <a href="subjects/english/class12.html">Class 12</a>
+      </div>
 
-    <div class="item">
-      <h3>📐 Mathematics</h3>
-      <a href="subjects/mathematics/class9.html">Class 9</a> |
-      <a href="subjects/mathematics/class10.html">Class 10</a> |
-      <a href="subjects/mathematics/class11.html">Class 11</a> |
-      <a href="subjects/mathematics/class12.html">Class 12</a>
-    </div>
-
-    <div class="item">
-      <h3>💻 Computer Science</h3>
-      <a href="subjects/computer/class9.html">Class 9</a> |
-      <a href="subjects/computer/class10.html">Class 10</a> |
-      <a href="subjects/computer/class11.html">Class 11</a> |
-      <a href="subjects/computer/class12.html">Class 12</a>
+      <div class="item box urdu">
+        <div class="box-header">📝 Urdu</div>
+        <a href="subjects/urdu/class9.html">Class 9</a> |
+        <a href="subjects/urdu/class10.html">Class 10</a> |
+        <a href="subjects/urdu/class11.html">Class 11</a> |
+        <a href="subjects/urdu/class12.html">Class 12</a>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Other Subjects -->
-  <div class="column">
-    <h3>📚 Other Subjects (BISE Lahore)</h3>
-
-    <div class="item">
-      <h3>📖 English</h3>
-      <a href="subjects/english/class9.html">Class 9</a> |
-      <a href="subjects/english/class10.html">Class 10</a> |
-      <a href="subjects/english/class11.html">Class 11</a> |
-      <a href="subjects/english/class12.html">Class 12</a>
-    </div>
-
-    <div class="item">
-      <h3>📝 Urdu</h3>
-      <a href="subjects/urdu/class9.html">Class 9</a> |
-      <a href="subjects/urdu/class10.html">Class 10</a> |
      
